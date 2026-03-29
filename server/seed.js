@@ -14,7 +14,7 @@ async function seed() {
   if (!existingAdmin) {
     db.prepare(
       'INSERT INTO admin_users (username, password_hash, name, email, role) VALUES (?, ?, ?, ?, ?)'
-    ).run(username, hash, 'Admin', 'admin@zongedo.com', 'admin');
+    ).run(username, hash, 'Admin', 'admin@mobimech.com', 'admin');
     console.log(`✅ Admin user created: ${username} / ${password}`);
   } else {
     console.log('ℹ️  Admin user already exists');
@@ -132,7 +132,7 @@ async function seed() {
     const insertBookings = db.transaction(() => {
       for (let i = 0; i < 5; i++) {
         const c = sampleCustomers[i];
-        const ref = `ZNG-20260${20 + i}-00${i + 1}`;
+        const ref = `MMC-20260${20 + i}-00${i + 1}`;
         const result = bookingStmt.run(
           ref, i + 1, i + 1, statuses[i], dates[i], times[i],
           c.address, c.city, c.province, c.postal_code, prices[i]

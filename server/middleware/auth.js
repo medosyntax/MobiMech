@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'zongedo-secret-key-change-in-production-2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'mobimech-secret-key-change-in-production-2026';
 
 function authenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];

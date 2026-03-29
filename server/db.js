@@ -1,7 +1,7 @@
 const Database = require('better-sqlite3');
 const path = require('path');
 
-const dbPath = path.join(__dirname, 'zongedo.db');
+const dbPath = path.join(__dirname, 'mobimech.db');
 const db = new Database(dbPath);
 
 // Enable WAL mode for better concurrent read performance
@@ -146,7 +146,7 @@ function generateReference() {
     "SELECT COUNT(*) as c FROM bookings WHERE scheduled_date = date('now')"
   ).get().c;
   const seq = String(count + 1).padStart(3, '0');
-  return `ZNG-${datePart}-${seq}`;
+  return `MMC-${datePart}-${seq}`;
 }
 
 // Migrate: add extra_charges column if missing

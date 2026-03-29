@@ -194,7 +194,7 @@ export default function InvoiceDetail() {
             {/* Header */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 40, paddingBottom: 20, borderBottom: '3px solid #1a1a2e' }}>
               <div>
-                <h1 style={{ fontSize: 28, fontWeight: 800, color: '#1a1a2e', letterSpacing: 2 }}>ZONGEDO</h1>
+                <h1 style={{ fontSize: 28, fontWeight: 800, color: '#1a1a2e', letterSpacing: 2 }}>MOBIMECH</h1>
                 <p style={{ color: '#666', fontSize: 13, marginTop: 4 }}>Mobile Mechanic Services</p>
               </div>
               <div style={{ textAlign: 'right' }}>
@@ -328,7 +328,7 @@ export default function InvoiceDetail() {
 
             {/* Footer */}
             <div style={{ textAlign: 'center', paddingTop: 30, borderTop: '1px solid #eee' }}>
-              <p style={{ fontSize: 12, color: '#999', margin: '2px 0' }}>Zongedo – Mobile Mechanic Services</p>
+              <p style={{ fontSize: 12, color: '#999', margin: '2px 0' }}>MobiMech – Mobile Mechanic Services</p>
               <p style={{ fontSize: 12, color: '#999', margin: '2px 0' }}>Thank you for your business!</p>
             </div>
           </div>

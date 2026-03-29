@@ -1,7 +1,7 @@
 const API_BASE = '/api';
 
 async function request(endpoint, options = {}) {
-  const token = localStorage.getItem('zongedo_token');
+  const token = localStorage.getItem('mobimech_token');
 
   const config = {
     headers: {
@@ -15,8 +15,8 @@ async function request(endpoint, options = {}) {
   const res = await fetch(`${API_BASE}${endpoint}`, config);
 
   if (res.status === 401 || res.status === 403) {
-    localStorage.removeItem('zongedo_token');
-    localStorage.removeItem('zongedo_user');
+    localStorage.removeItem('mobimech_token');
+    localStorage.removeItem('mobimech_user');
     if (window.location.pathname.startsWith('/admin') && window.location.pathname !== '/admin/login') {
       window.location.href = '/admin/login';
     }

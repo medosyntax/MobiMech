@@ -1,7 +1,7 @@
 {
-  "name": "zongedo",
+  "name": "mobimech",
   "version": "1.0.0",
-  "description": "Zongedo - Mobile Mechanic System",
+  "description": "MobiMech - Mobile Mechanic System",
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",

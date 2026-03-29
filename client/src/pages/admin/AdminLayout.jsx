@@ -33,7 +33,7 @@ export default function AdminLayout() {
         <div className="flex items-center justify-between h-16 px-6 border-b border-navy-600">
           <div className="flex items-center gap-2">
             <Wrench className="h-6 w-6 text-brand-400" />
-            <span className="font-bold text-brand-400">ZONGEDO</span>
+            <span className="font-bold text-brand-400">MOBIMECH</span>
           </div>
           <button className="lg:hidden" onClick={() => setSidebarOpen(false)}>
             <X className="h-5 w-5" />

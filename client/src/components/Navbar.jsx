@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-bold text-xl">
             <Wrench className="h-6 w-6 text-brand-400" />
-            <span className="text-brand-400">ZONGEDO</span>
+            <span className="text-brand-400">MOBIMECH</span>
           </Link>
 
           {/* Desktop nav */}

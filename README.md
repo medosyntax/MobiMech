@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔧 Zongedo
+# 🔧 MobiMech
 
 ### Mobile Mechanic Service Booking & Management System
 
@@ -36,7 +36,7 @@ A full-stack web application that powers a mobile mechanic business — enabling
 
 ## 🚗 Introduction
 
-**Zongedo** is a comprehensive mobile mechanic service platform designed for automotive businesses that deliver repair and maintenance services directly to the customer's location — whether at home, the office, or roadside.
+**MobiMech** is a comprehensive mobile mechanic service platform designed for automotive businesses that deliver repair and maintenance services directly to the customer's location — whether at home, the office, or roadside.
 
 The platform solves two core problems:
 
@@ -140,8 +140,8 @@ The platform solves two core problems:
 
 ```bash
 # Clone the repository
-git clone https://github.com/medosyntax/zongedo.git
-cd zongedo
+git clone https://github.com/medosyntax/mobimech.git
+cd mobimech
 
 # Install all dependencies (root, server, and client)
 npm run install:all
@@ -204,7 +204,7 @@ SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 EMAIL_FROM=your-email@gmail.com
-EMAIL_FROM_NAME=Zongedo Auto Services
+EMAIL_FROM_NAME=MobiMech Auto Services
 
 # Client URL (for CORS)
 CLIENT_URL=http://localhost:5173
@@ -215,7 +215,7 @@ CLIENT_URL=http://localhost:5173
 ## 📁 Project Structure
 
 ```
-zongedo/
+mobimech/
 ├── package.json                 # Root scripts (dev, build, start, seed)
 ├── client/                      # React frontend
 │   ├── index.html
@@ -306,7 +306,7 @@ zongedo/
 │        ▼                                                 │
 │  ┌──────────────────────────────────┐                   │
 │  │     SQLite (better-sqlite3)      │                   │
-│  │     zongedo.db (file-based)      │                   │
+│  │     mobimech.db (file-based)      │                   │
 │  └──────────────────────────────────┘                   │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -360,8 +360,8 @@ Customer submits booking form
 
 ### Reference Number Format
 
-Booking references follow the pattern `ZNG-YYYYMMDD-XXX` where:
-- `ZNG` — Zongedo prefix
+Booking references follow the pattern `MMC-YYYYMMDD-XXX` where:
+- `MMC` — MobiMech prefix
 - `YYYYMMDD` — Date of booking creation
 - `XXX` — Random 3-character alphanumeric suffix
 
@@ -381,7 +381,7 @@ All endpoints are prefixed with `/api`.
 | `GET` | `/api/services/categories` | List all service categories |
 | `GET` | `/api/services/:id` | Get single service details |
 | `POST` | `/api/bookings` | Create a new booking |
-| `GET` | `/api/bookings/track` | Track a booking: `?ref=ZNG-...&email=...` |
+| `GET` | `/api/bookings/track` | Track a booking: `?ref=MMC-...&email=...` |
 
 ### Authentication
 
@@ -615,8 +615,8 @@ JWT generated (24h expiry)
         │
         ▼
 Token stored in localStorage
-  zongedo_token  → JWT string
-  zongedo_user   → user object
+  mobimech_token  → JWT string
+  mobimech_user   → user object
         │
         ▼
 All subsequent API calls include:
@@ -630,7 +630,7 @@ auth.js middleware verifies token
 
 - **Algorithm**: HS256 (HMAC-SHA256)
 - **Expiration**: 24 hours
-- **Storage**: `localStorage` (`zongedo_token`)
+- **Storage**: `localStorage` (`mobimech_token`)
 - **Client guard**: `ProtectedRoute` component checks `AuthContext` and redirects to `/admin/login` if unauthenticated
 
 ---

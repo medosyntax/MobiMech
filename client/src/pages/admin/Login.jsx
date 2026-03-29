@@ -35,7 +35,7 @@ export default function AdminLogin() {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Wrench className="h-8 w-8 text-brand-500" />
-            <span className="text-2xl font-bold text-brand-500">ZONGEDO</span>
+            <span className="text-2xl font-bold text-brand-500">MOBIMECH</span>
           </div>
           <h1 className="text-xl font-semibold text-navy-700">Admin Panel</h1>
           <p className="text-gray-500 text-sm mt-1">Sign in to manage your business</p>

@@ -55,6 +55,6 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🔧 Zongedo server running on http://localhost:${PORT}`);
+  console.log(`\n🔧 MobiMech server running on http://localhost:${PORT}`);
   console.log(`   Environment: ${process.env.NODE_ENV || 'development'}\n`);
 });

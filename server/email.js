@@ -16,7 +16,7 @@ if (EMAIL_ENABLED) {
   });
 }
 
-const fromAddress = `"${process.env.EMAIL_FROM_NAME || 'Zongedo Mobile Mechanics'}" <${process.env.EMAIL_FROM || 'noreply@zongedo.com'}>`;
+const fromAddress = `"${process.env.EMAIL_FROM_NAME || 'MobiMech Mobile Mechanics'}" <${process.env.EMAIL_FROM || 'noreply@mobimech.com'}>`;
 
 function formatDate(dateStr) {
   const d = new Date(dateStr + 'T00:00:00');
@@ -61,7 +61,7 @@ async function sendBookingConfirmation(booking, customer, vehicle, services) {
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <div style="background: #1a2744; padding: 24px; text-align: center;">
-        <h1 style="color: #f97316; margin: 0; font-size: 28px;">ZONGEDO</h1>
+        <h1 style="color: #f97316; margin: 0; font-size: 28px;">MOBIMECH</h1>
         <p style="color: #94a3b8; margin: 4px 0 0;">Mobile Mechanic Services</p>
       </div>
       <div style="padding: 32px 24px; background: #ffffff;">
@@ -87,7 +87,7 @@ async function sendBookingConfirmation(booking, customer, vehicle, services) {
         <p style="color: #64748b; font-size: 14px;">We'll confirm your appointment shortly. You can track your booking status using your reference number at our website.</p>
       </div>
       <div style="background: #f1f5f9; padding: 16px 24px; text-align: center; color: #64748b; font-size: 12px;">
-        <p>Zongedo Mobile Mechanics | Professional Service at Your Doorstep</p>
+        <p>MobiMech Mobile Mechanics | Professional Service at Your Doorstep</p>
       </div>
     </div>
   `;
@@ -108,7 +108,7 @@ async function sendStatusUpdate(booking, customer, newStatus) {
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <div style="background: #1a2744; padding: 24px; text-align: center;">
-        <h1 style="color: #f97316; margin: 0; font-size: 28px;">ZONGEDO</h1>
+        <h1 style="color: #f97316; margin: 0; font-size: 28px;">MOBIMECH</h1>
         <p style="color: #94a3b8; margin: 4px 0 0;">Mobile Mechanic Services</p>
       </div>
       <div style="padding: 32px 24px; background: #ffffff;">
@@ -126,7 +126,7 @@ async function sendStatusUpdate(booking, customer, newStatus) {
         <p style="color: #64748b; font-size: 14px;">Track your booking at any time using your reference number on our website.</p>
       </div>
       <div style="background: #f1f5f9; padding: 16px 24px; text-align: center; color: #64748b; font-size: 12px;">
-        <p>Zongedo Mobile Mechanics | Professional Service at Your Doorstep</p>
+        <p>MobiMech Mobile Mechanics | Professional Service at Your Doorstep</p>
       </div>
     </div>
   `;
@@ -142,7 +142,7 @@ async function sendInvoiceEmail(invoice, booking, customer, services) {
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <div style="background: #1a2744; padding: 24px; text-align: center;">
-        <h1 style="color: #f97316; margin: 0; font-size: 28px;">ZONGEDO</h1>
+        <h1 style="color: #f97316; margin: 0; font-size: 28px;">MOBIMECH</h1>
         <p style="color: #94a3b8; margin: 4px 0 0;">Mobile Mechanic Services</p>
       </div>
       <div style="padding: 32px 24px; background: #ffffff;">
@@ -169,15 +169,15 @@ async function sendInvoiceEmail(invoice, booking, customer, services) {
 
         ${invoice.due_date ? `<p><strong>Due Date:</strong> ${formatDate(invoice.due_date)}</p>` : ''}
 
-        <p style="color: #64748b; font-size: 14px;">Thank you for choosing Zongedo. We appreciate your business!</p>
+        <p style="color: #64748b; font-size: 14px;">Thank you for choosing MobiMech. We appreciate your business!</p>
       </div>
       <div style="background: #f1f5f9; padding: 16px 24px; text-align: center; color: #64748b; font-size: 12px;">
-        <p>Zongedo Mobile Mechanics | Professional Service at Your Doorstep</p>
+        <p>MobiMech Mobile Mechanics | Professional Service at Your Doorstep</p>
       </div>
     </div>
   `;
 
-  return sendEmail(customer.email, `Invoice ${invoice.invoice_number} – Zongedo`, html);
+  return sendEmail(customer.email, `Invoice ${invoice.invoice_number} – MobiMech`, html);
 }
 
 module.exports = {

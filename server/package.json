@@ -1,7 +1,7 @@
 {
-  "name": "zongedo-server",
+  "name": "mobimech-server",
   "version": "1.0.0",
-  "description": "Zongedo API Server",
+  "description": "MobiMech API Server",
   "main": "index.js",
   "scripts": {
     "dev": "node --watch index.js",

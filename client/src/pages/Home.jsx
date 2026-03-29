@@ -38,7 +38,7 @@ export default function Home() {
               <span className="text-brand-400">Delivered to You</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed">
-              Zongedo brings professional mobile mechanic services directly to your doorstep. 
+              MobiMech brings professional mobile mechanic services directly to your doorstep. 
               No towing, no waiting rooms — just quality repairs wherever you are.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -99,7 +99,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-700">Why Choose Zongedo?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-700">Why Choose MobiMech?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((f, i) => (

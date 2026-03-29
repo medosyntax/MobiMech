@@ -94,7 +94,7 @@ router.post('/', authenticateToken, async (req, res) => {
 
   db.prepare(
     'INSERT INTO notifications (booking_id, customer_id, type, subject) VALUES (?, ?, ?, ?)'
-  ).run(booking.id, customer.id, 'invoice', `Invoice ${invoiceNumber} – Zongedo`);
+  ).run(booking.id, customer.id, 'invoice', `Invoice ${invoiceNumber} – MobiMech`);
 
   res.status(201).json(invoice);
 });

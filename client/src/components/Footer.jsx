@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Wrench className="h-6 w-6 text-brand-400" />
-              <span className="text-brand-400 font-bold text-xl">ZONGEDO</span>
+              <span className="text-brand-400 font-bold text-xl">MOBIMECH</span>
             </div>
             <p className="text-sm text-gray-400">
               Professional mobile mechanic services delivered to your doorstep. 
@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-brand-400" />
-                info@zongedo.com
+                info@mobimech.com
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-brand-400" />
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-navy-600 mt-8 pt-8 text-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Zongedo Mobile Mechanics. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} MobiMech Mobile Mechanics. All rights reserved.</p>
         </div>
       </div>
     </footer>

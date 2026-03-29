@@ -126,7 +126,7 @@ router.post(
   }
 );
 
-// GET /api/bookings/track?ref=ZNG-xxx&email=xxx — public, track booking
+// GET /api/bookings/track?ref=MMC-xxx&email=xxx — public, track booking
 router.get('/track', (req, res) => {
   const { ref, email } = req.query;
   if (!ref || !email) {
