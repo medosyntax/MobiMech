@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-brand-400" />
-                Serving the Greater Austin Area
+                Based out of Calgary, Alberta
               </li>
             </ul>
           </div>
