@@ -140,7 +140,7 @@ The platform solves two core problems:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/zongedo.git
+git clone https://github.com/medosyntax/zongedo.git
 cd zongedo
 
 # Install all dependencies (root, server, and client)
